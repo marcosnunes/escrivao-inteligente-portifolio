@@ -107,6 +107,11 @@ h2 { margin-bottom: 0; font: 500 clamp(37px, 4.3vw, 54px)/1.02 var(--serif); let
 .privacy-card p { margin: 0; color: #d2ded5; font-size: 12px; line-height: 1.7; }
 .privacy-foot { margin: 19px 0 0; color: #d2ded5; font-size: 11px; line-height: 1.6; }
 
+.limitations { background: var(--white); }
+.limitations .morning-card { background: var(--white); }
+.limitations .limitation-foot { color: var(--muted); }
+.limitations .morning-card h3 { margin-top: 18px; }
+
 .business { background: #e8e9dc; }
 .offer { display: grid; grid-template-columns: 1fr auto; gap: 24px; align-items: center; padding: 34px 0; border-top: 1px solid #bec4b4; border-bottom: 1px solid #bec4b4; }
 .offer h3 { margin: 0 0 9px; font: 30px var(--serif); }

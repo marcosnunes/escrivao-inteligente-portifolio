@@ -3,7 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f1e9">
   <title>Política de Privacidade — Escrivão Inteligente</title>
+  <meta name="description" content="Política de privacidade do aplicativo Escrivão Inteligente para Windows.">
   <link rel="stylesheet" href="style.css">
 </head>
 <body class="policy">
@@ -18,72 +20,85 @@
   <main class="wrap">
     <span class="eyebrow">Documento legal</span>
     <h1>Política de Privacidade</h1>
-    <p class="updated">Última atualização: 12 de outubro de 2026</p>
+    <p class="updated">Última atualização: 25 de outubro de 2026</p>
 
-    <div class="notice">Esta política descreve como o aplicativo trata dados pessoais, em conformidade com a Lei Geral de Proteção de Dados (Lei nº 13.709/2018).</div>
+    <div class="notice">Esta política descreve o comportamento atualmente observado no aplicativo. O Escrivão Inteligente está em evolução; consulte também as limitações do produto e as condições de licenciamento da Microsoft Store.</div>
 
     <nav class="contents" aria-label="Sumário">
       <strong>Sumário</strong>
       <ol>
-        <li><a href="#s1">Quem somos</a></li>
-        <li><a href="#s2">Dados tratados</a></li>
-        <li><a href="#s3">Finalidades e bases legais</a></li>
-        <li><a href="#s4">Armazenamento e segurança</a></li>
-        <li><a href="#s5">Terceiros</a></li>
-        <li><a href="#s6">Seus direitos</a></li>
-        <li><a href="#s7">Dados de clientes do advogado</a></li>
-        <li><a href="#s8">Alterações</a></li>
-        <li><a href="#s9">Contato</a></li>
+        <li><a href="#s1">Responsável e escopo</a></li>
+        <li><a href="#s2">Dados que você insere</a></li>
+        <li><a href="#s3">Armazenamento no desktop</a></li>
+        <li><a href="#s4">Processamento por IA</a></li>
+        <li><a href="#s5">Diagnósticos e conexões externas</a></li>
+        <li><a href="#s6">Segurança e retenção</a></li>
+        <li><a href="#s7">Plataforma Microsoft Store</a></li>
+        <li><a href="#s8">Dados de terceiros</a></li>
+        <li><a href="#s9">Direitos e contato</a></li>
       </ol>
     </nav>
 
     <article>
       <section id="s1">
-        <h2>1. Quem somos</h2>
-        <p>O Escrivão Inteligente é um aplicativo de apoio à advocacia, desenvolvido e mantido por Marcos Roberto Nunes Lindolpho.</p>
+        <h2>1. Responsável e escopo</h2>
+        <p>O Escrivão Inteligente é um aplicativo de apoio à advocacia, desenvolvido e mantido por Marcos Roberto Nunes Lindolpho. Esta política se aplica ao aplicativo desktop para Windows e a este site de apresentação.</p>
+        <p>O site é uma página estática hospedada pelo GitHub Pages. A hospedagem pode processar dados técnicos de acesso conforme as políticas do GitHub. O desenvolvedor não adicionou neste site formulários, analytics ou mecanismos próprios de envio de documentos.</p>
       </section>
+
       <section id="s2">
-        <h2>2. Dados tratados</h2>
-        <p>Os documentos e informações que você insere no aplicativo são processados e armazenados localmente no seu computador. Não os recebemos nem acessamos.</p>
-        <p>Podemos tratar apenas dados mínimos de licenciamento (como a confirmação da compra ou do período de avaliação), fornecidos pela plataforma de distribuição.</p>
+        <h2>2. Dados que você insere</h2>
+        <p>Ao usar o aplicativo desktop, você pode inserir dados de processos, clientes, partes, compromissos, lançamentos financeiros e anotações, além de importar documentos PDF com texto, DOCX, TXT e MD. O conteúdo extraído também pode ser usado em buscas, resumos, perguntas e rascunhos gerados por IA.</p>
+        <p>Evite importar dados que não sejam necessários à sua atividade. Você é responsável por definir a finalidade, a base legal e os controles apropriados para os dados de clientes e terceiros sob sua responsabilidade profissional.</p>
       </section>
+
       <section id="s3">
-        <h2>3. Finalidades e bases legais</h2>
-        <ul>
-          <li>Disponibilizar e licenciar o aplicativo (execução de contrato);</li>
-          <li>Prestar suporte quando solicitado por você (execução de contrato e legítimo interesse);</li>
-          <li>Cumprir obrigações legais e regulatórias.</li>
-        </ul>
+        <h2>3. Armazenamento no aplicativo desktop</h2>
+        <p>Na versão desktop observada, o banco SQLite, os arquivos importados e os dados de pesquisa são armazenados localmente na área de dados do aplicativo no Windows. A busca indexa texto extraído para localizar trechos e páginas. Não há serviço próprio de sincronização ou armazenamento em nuvem implementado no aplicativo.</p>
+        <p>Isso não significa que o produto tenha sido certificado como totalmente offline: o tráfego de rede do pacote distribuído não foi auditado integralmente. A instalação, a atualização e a validação de licença podem envolver a Microsoft Store e componentes do Windows.</p>
+        <p>O modo navegador é limitado: dados básicos ficam no armazenamento local daquele navegador. Importação, leitura e busca de documentos e recursos de IA exigem o aplicativo desktop.</p>
       </section>
+
       <section id="s4">
-        <h2>4. Armazenamento e segurança</h2>
-        <p>Os dados ficam no dispositivo do usuário. Recomendamos o uso de senha no computador e criptografia de disco. Você pode excluir processos e dados a qualquer momento pelo aplicativo.</p>
+        <h2>4. Processamento por inteligência artificial</h2>
+        <p>No desktop, o modelo IBM Granite 3.3 2B Instruct é executado pelo runtime llama.cpp no próprio computador. O texto da pergunta, as instruções e os trechos recuperados são enviados ao servidor local do runtime por uma conexão de loopback no dispositivo para gerar respostas.</p>
+        <p>Resumos, respostas e minutas podem conter erros, omissões ou referências inadequadas. Confira o documento original e revise cada resultado. O aplicativo não substitui aconselhamento, análise ou decisão profissional.</p>
       </section>
+
       <section id="s5">
-        <h2>5. Terceiros</h2>
-        <p>Não vendemos nem compartilhamos documentos ou dados pessoais com terceiros. Dados de licenciamento podem ser tratados pela plataforma de distribuição do aplicativo, conforme a política dela.</p>
+        <h2>5. Diagnósticos e conexões externas</h2>
+        <p>O aplicativo registra eventos estruturados de diagnóstico para investigar falhas e operações. Os campos permitidos incluem canal, identificadores numéricos, categorias, contagens, duração e códigos de erro. Os logs não devem conter conteúdo de documentos, nomes de clientes, prompts, respostas ou mensagens de exceção.</p>
+        <p>Essa configuração foi coberta por testes automatizados, mas retenção e rotação de logs, crash reports do sistema e todo o tráfego de rede do pacote final ainda não foram auditados. Não anunciamos ausência total de coleta ou de conexões externas antes dessa auditoria.</p>
       </section>
+
       <section id="s6">
-        <h2>6. Seus direitos</h2>
-        <p>Nos termos da LGPD, você pode solicitar confirmação de tratamento, acesso, correção, anonimização, eliminação, portabilidade e informações sobre compartilhamento, bem como revogar consentimento quando aplicável. Como os documentos permanecem no seu dispositivo, você os administra diretamente.</p>
+        <h2>6. Segurança, exclusão e retenção</h2>
+        <p>O aplicativo não implementa criptografia própria em repouso para o banco SQLite ou para os documentos importados. Os arquivos permanecem sujeitos às permissões e proteções do dispositivo. Recomendamos proteger a conta e o disco do computador e manter backups seguros, pois o aplicativo ainda não oferece backup e restauração integrados.</p>
+        <p>O app oferece operações para excluir processos e documentos, inclusive registros e arquivos associados nos fluxos implementados. Isso não equivale a apagamento seguro de todos os vestígios possíveis do dispositivo, como cópias de segurança, snapshots ou mecanismos do sistema operacional.</p>
+        <p>Os dados permanecem no dispositivo até que você os exclua ou remova o armazenamento local do aplicativo. Defina sua própria política de retenção de acordo com suas obrigações profissionais e legais.</p>
       </section>
+
       <section id="s7">
-        <h2>7. Dados de clientes do advogado</h2>
-        <p>Ao inserir dados de terceiros (como clientes e partes), o advogado atua como controlador desses dados e é responsável por sua base legal e pelo sigilo profissional. O aplicativo oferece processamento local para apoiar esse dever.</p>
+        <h2>7. Microsoft Store e licenciamento</h2>
+        <p>O produto está cadastrado na Microsoft Store com Store ID <strong>9NN8680NV66S</strong>. A Microsoft pode tratar informações necessárias à distribuição, compra, instalação, atualização ou licenciamento do aplicativo conforme seus próprios termos e políticas. Consulte a <a href="https://privacy.microsoft.com/pt-br/privacystatement" target="_blank" rel="noopener noreferrer">Declaração de Privacidade da Microsoft</a>.</p>
+        <p>O desenvolvedor não recebe o conteúdo dos processos por meio de uma integração de licenciamento própria implementada no aplicativo atual. Preço, disponibilidade e condições de compra devem ser consultados na <a href="https://apps.microsoft.com/detail/9NN8680NV66S" target="_blank" rel="noopener noreferrer">página do produto na Store</a>.</p>
       </section>
+
       <section id="s8">
-        <h2>8. Alterações</h2>
-        <p>Esta política pode ser atualizada. A data da última revisão consta no topo desta página.</p>
+        <h2>8. Dados de clientes e terceiros</h2>
+        <p>Ao inserir dados pessoais de clientes, partes ou outras pessoas, o profissional deve avaliar as bases legais, os deveres de informação, o sigilo e as medidas de segurança aplicáveis. A arquitetura local do aplicativo não substitui essas obrigações nem constitui, por si só, garantia de conformidade com a LGPD.</p>
       </section>
+
       <section id="s9">
-        <h2>9. Contato</h2>
-        <p>Dúvidas ou solicitações: <a href="mailto:marcos.nunes.lph@outlook.com">marcos.nunes.lph@outlook.com</a>.</p>
+        <h2>9. Direitos e contato</h2>
+        <p>Solicitações relacionadas ao tratamento de dados pelo desenvolvedor podem ser enviadas para <a href="mailto:marcos.nunes.lph@outlook.com">marcos.nunes.lph@outlook.com</a>. Como os dados dos processos permanecem no dispositivo do usuário na versão desktop, o próprio usuário pode consultar e administrar esses registros pelas funções disponíveis no aplicativo e pelo dispositivo.</p>
+        <p>Esta política pode ser atualizada quando o produto ou suas práticas mudarem. A data da última revisão consta no topo da página.</p>
       </section>
     </article>
   </main>
 
   <footer>
-    <div class="wrap footer-inner"><span>© Escrivão Inteligente</span><a href="index.html">Início</a></div>
+    <div class="wrap footer-inner"><span>© Escrivão Inteligente · Store ID 9NN8680NV66S</span><div class="footer-links"><a href="index.html">Início</a><a href="https://apps.microsoft.com/detail/9NN8680NV66S" target="_blank" rel="noopener noreferrer">Microsoft Store</a></div></div>
   </footer>
 </body>
 </html>
