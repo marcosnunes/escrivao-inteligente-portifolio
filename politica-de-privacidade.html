@@ -48,7 +48,7 @@
 
       <section id="s2">
         <h2>2. Dados que você insere</h2>
-        <p>Ao usar o aplicativo desktop, você pode inserir dados de processos, clientes, partes, compromissos, lançamentos financeiros e anotações, além de importar documentos PDF com texto, DOCX, TXT e MD. O conteúdo extraído também pode ser usado em buscas, resumos, perguntas e rascunhos gerados por IA.</p>
+        <p>Ao usar o aplicativo desktop, você pode inserir dados de processos, clientes, partes, compromissos, lançamentos financeiros e anotações, além de importar documentos PDF, DOCX, TXT e MD. A nova versão local também reconhece PDFs digitalizados e imagens PNG/JPG/JPEG por OCR; a disponibilidade na Store depende da atualização do pacote publicado. O conteúdo extraído também pode ser usado em buscas, resumos, perguntas e rascunhos gerados por IA.</p>
         <p>Evite importar dados que não sejam necessários à sua atividade. Você é responsável por definir a finalidade, a base legal e os controles apropriados para os dados de clientes e terceiros sob sua responsabilidade profissional.</p>
       </section>
 
@@ -62,6 +62,7 @@
       <section id="s4">
         <h2>4. Processamento por inteligência artificial</h2>
         <p>No desktop, o modelo Qwen3-4B, em formato GGUF quantizado Q4_K_M, é executado pelo runtime llama.cpp no próprio computador. O texto da pergunta, as instruções e os trechos recuperados são enviados ao servidor local do runtime por uma conexão de loopback no dispositivo para gerar respostas.</p>
+        <p>Na versão com OCR, o Tesseract processa as imagens e páginas no próprio computador, com modelos de português e inglês incluídos no aplicativo. Esse fluxo não envia imagens a um serviço externo nem baixa modelos durante a importação. Texto reconhecido, origem e confiança são armazenados no banco local. Cópias temporárias dos modelos de idioma, sem conteúdo dos documentos, são removidas ao concluir a leitura.</p>
         <p>Resumos, respostas e minutas podem conter erros, omissões ou referências inadequadas. Confira o documento original e revise cada resultado. O aplicativo não substitui aconselhamento, análise ou decisão profissional.</p>
       </section>
 
