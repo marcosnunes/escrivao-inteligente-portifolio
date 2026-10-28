@@ -20,7 +20,7 @@
   <main class="wrap">
     <span class="eyebrow">Documento legal</span>
     <h1>Política de Privacidade</h1>
-    <p class="updated">Última atualização: 25 de outubro de 2026</p>
+    <p class="updated">Última atualização: 27 de outubro de 2026</p>
 
     <div class="notice">Esta política descreve o comportamento atualmente observado no aplicativo. O Escrivão Inteligente está em evolução; consulte também as limitações do produto e as condições de licenciamento da Microsoft Store.</div>
 
@@ -54,8 +54,10 @@
 
       <section id="s3">
         <h2>3. Armazenamento no aplicativo desktop</h2>
-        <p>Na versão desktop observada, o banco SQLite, os arquivos importados e os dados de pesquisa são armazenados localmente na área de dados do aplicativo no Windows. A busca indexa texto extraído para localizar trechos e páginas. Não há serviço próprio de sincronização ou armazenamento em nuvem implementado no aplicativo.</p>
+        <p>O banco SQLite, os arquivos importados e os dados de pesquisa ficam na área de dados do aplicativo no Windows ou em uma USB removível elegível escolhida pelo administrador. A busca indexa texto extraído para localizar trechos e páginas. A versão em desenvolvimento oferece backups completos opcionais na pasta local do OneDrive do usuário, após confirmação da conta e autorização explícita. A disponibilidade na Store depende da atualização do pacote publicado.</p>
+        <p>Quando habilitados, os backups incluem banco, documentos, usuários e auditoria: são criados imediatamente, uma vez por dia ao abrir e por solicitação manual. O cliente OneDrive do Windows pode enviá-los à conta Microsoft escolhida, conforme sua configuração, cota e políticas. O aplicativo não confirma o envio remoto nem fornece serviço próprio de nuvem. As cópias não recebem criptografia adicional pelo aplicativo; confira conta, compartilhamento e sincronização.</p>
         <p>Isso não significa que o produto tenha sido certificado como totalmente offline: o tráfego de rede do pacote distribuído não foi auditado integralmente. A instalação, a atualização e a validação de licença podem envolver a Microsoft Store e componentes do Windows.</p>
+        <p>A integração processual DataJud é opcional e desativada por padrão. Quando autorizada, envia o número CNJ consultado à API oficial do Conselho Nacional de Justiça e obtém a chave pública na Wiki oficial. Os metadados e movimentações retornados ficam no repositório local e podem integrar seus backups. Não são enviados ao desenvolvedor nem a uma IA externa. O serviço público não fornece partes, advogados ou documentos integrais; ausência de resultado não comprova inexistência de processo. Uma chave personalizada é protegida pelo perfil Windows e não integra os backups do repositório. O agendamento só executa com o aplicativo aberto e o administrador conectado. Consultas não substituem intimações oficiais nem garantem atualização imediata.</p>
         <p>O modo navegador é limitado: dados básicos ficam no armazenamento local daquele navegador. Importação, leitura e busca de documentos e recursos de IA exigem o aplicativo desktop.</p>
       </section>
 
@@ -68,15 +70,16 @@
 
       <section id="s5">
         <h2>5. Diagnósticos e conexões externas</h2>
+        <p>O aplicativo usa autenticação Microsoft integrada ao Windows (WAM) para o administrador geral, com contas pessoais ou de trabalho/escola e registro compartilhado mantido pelo desenvolvedor. Não é necessário que o usuário registre um aplicativo. A Microsoft gerencia seleção de conta, senha, autenticação em duas etapas e consentimento quando necessários. Se o login nativo falhar, o usuário pode escolher a alternativa pelo navegador. A Microsoft processa os dados de autenticação conforme suas políticas. O aplicativo recebe identificação estável, nome e identificador de e-mail quando disponíveis; guarda o vínculo no banco para controle de acesso e auditoria, mas não lê nem guarda a senha Microsoft. O cache de tokens do aplicativo fica em memória e é descartado ao concluir, sem envio ao desenvolvedor nem inclusão nos backups. O WAM mantém seu próprio cache protegido pelo Windows para login único; sair do aplicativo não desconecta a conta do Windows. O login requer internet; com várias contas ou sem conta Microsoft conectada ao Windows, a Microsoft pode pedir seleção ou adição de conta.</p>
         <p>O aplicativo registra eventos estruturados de diagnóstico para investigar falhas e operações. Os campos permitidos incluem canal, identificadores numéricos, categorias, contagens, duração e códigos de erro. Os logs não devem conter conteúdo de documentos, nomes de clientes, prompts, respostas ou mensagens de exceção.</p>
         <p>Essa configuração foi coberta por testes automatizados, mas retenção e rotação de logs, crash reports do sistema e todo o tráfego de rede do pacote final ainda não foram auditados. Não anunciamos ausência total de coleta ou de conexões externas antes dessa auditoria.</p>
       </section>
 
       <section id="s6">
         <h2>6. Segurança, exclusão e retenção</h2>
-        <p>O aplicativo não implementa criptografia própria em repouso para o banco SQLite ou para os documentos importados. Os arquivos permanecem sujeitos às permissões e proteções do dispositivo. Recomendamos proteger a conta e o disco do computador e manter backups seguros, pois o aplicativo ainda não oferece backup e restauração integrados.</p>
+        <p>O aplicativo não implementa criptografia própria em repouso para o banco SQLite ou para os documentos importados, inclusive backups. Os arquivos permanecem sujeitos às permissões e proteções do dispositivo e da conta de armazenamento. Recomendamos criptografia de disco, autenticação em dois fatores na conta Microsoft e backups privados. A versão em desenvolvimento oferece geração de backups OneDrive, mas a restauração é manual, com o aplicativo fechado e cópia para uma pasta fora do OneDrive; não use um banco ativo em dois computadores.</p>
         <p>O app oferece operações para excluir processos e documentos, inclusive registros e arquivos associados nos fluxos implementados. Isso não equivale a apagamento seguro de todos os vestígios possíveis do dispositivo, como cópias de segurança, snapshots ou mecanismos do sistema operacional.</p>
-        <p>Os dados permanecem no dispositivo até que você os exclua ou remova o armazenamento local do aplicativo. Defina sua própria política de retenção de acordo com suas obrigações profissionais e legais.</p>
+        <p>Dados e backups permanecem nos locais escolhidos até exclusão. Desativar os backups ou limpar as cópias locais do aplicativo não apaga as cópias OneDrive. Não há expurgo automático dessas versões; sua exclusão e a retenção na nuvem são gerenciadas pelo usuário e pelo OneDrive. Defina sua política de retenção de acordo com suas obrigações profissionais e legais.</p>
       </section>
 
       <section id="s7">
