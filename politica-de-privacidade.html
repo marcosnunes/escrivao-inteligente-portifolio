@@ -20,7 +20,7 @@
   <main class="wrap">
     <span class="eyebrow">Documento legal</span>
     <h1>Política de Privacidade</h1>
-    <p class="updated">Última atualização: 27 de outubro de 2026</p>
+    <p class="updated">Última atualização: 28 de outubro de 2026</p>
 
     <div class="notice">Esta política descreve o comportamento atualmente observado no aplicativo. O Escrivão Inteligente está em evolução; consulte também as limitações do produto e as condições de licenciamento da Microsoft Store.</div>
 
@@ -50,6 +50,7 @@
         <h2>2. Dados que você insere</h2>
         <p>Ao usar o aplicativo desktop, você pode inserir dados de processos, clientes, partes, compromissos, lançamentos financeiros e anotações, além de importar documentos PDF, DOCX, TXT e MD. A nova versão local também reconhece PDFs digitalizados e imagens PNG/JPG/JPEG por OCR; a disponibilidade na Store depende da atualização do pacote publicado. O conteúdo extraído também pode ser usado em buscas, resumos, perguntas e rascunhos gerados por IA.</p>
         <p>Evite importar dados que não sejam necessários à sua atividade. Você é responsável por definir a finalidade, a base legal e os controles apropriados para os dados de clientes e terceiros sob sua responsabilidade profissional.</p>
+        <p>A atualização em desenvolvimento permite cadastros opcionais de pessoas físicas e jurídicas com nome/razão social, CPF/CNPJ, WhatsApp, e-mail e endereço, vinculados a processos. Também registra parcelas, pagamentos parciais e estornos financeiros. A disponibilidade na Store depende da publicação do novo pacote. Preencha somente informações necessárias e restrinja o acesso por permissões do escritório.</p>
       </section>
 
       <section id="s3">
@@ -70,6 +71,8 @@
 
       <section id="s5">
         <h2>5. Diagnósticos e conexões externas</h2>
+        <p>Na atualização de cadastros, os atalhos de contato abrem serviços externos apenas por ação do usuário: WhatsApp Web recebe o telefone, o aplicativo de e-mail recebe o destinatário e o Google Maps recebe o endereço consultado. Não há envio automático de mensagens, SMTP nem recuperação de senha por e-mail. O tratamento feito por esses serviços segue suas próprias políticas.</p>
+        <p>A atualização de equipe permite contas locais criadas pelo administrador. Suas senhas são verificadas por hashes com salt, não armazenadas em texto aberto; hashes locais, perfis, permissões e auditoria integram o banco e seus backups. O proprietário Microsoft confirma também o Windows Hello nativo do aplicativo, sem senha adicional do escritório. O aplicativo não recebe PIN, senha Windows ou dados biométricos; recebe somente o resultado da confirmação e a identidade do perfil Windows para conferir seu vínculo. Esse vínculo local é protegido pelo Windows via DPAPI e não integra os backups. Em outro dispositivo, é necessária nova autenticação Microsoft explícita e Hello para vinculação. A senha adicional da versão anterior é removida do banco ativo; cópias históricas podem conservar seus hashes antigos. As permissões e o Hello não cifram os arquivos do repositório nem protegem contra quem controla o perfil Windows ou o dispositivo. Não compartilhe o perfil Windows ou seu PIN: o Hello confirma o perfil, não distingue pessoas que compartilham suas credenciais.</p>
         <p>O aplicativo usa autenticação Microsoft integrada ao Windows (WAM) para o administrador geral, com contas pessoais ou de trabalho/escola e registro compartilhado mantido pelo desenvolvedor. Não é necessário que o usuário registre um aplicativo. A Microsoft gerencia seleção de conta, senha, autenticação em duas etapas e consentimento quando necessários. Se o login nativo falhar, o usuário pode escolher a alternativa pelo navegador. A Microsoft processa os dados de autenticação conforme suas políticas. O aplicativo recebe identificação estável, nome e identificador de e-mail quando disponíveis; guarda o vínculo no banco para controle de acesso e auditoria, mas não lê nem guarda a senha Microsoft. O cache de tokens do aplicativo fica em memória e é descartado ao concluir, sem envio ao desenvolvedor nem inclusão nos backups. O WAM mantém seu próprio cache protegido pelo Windows para login único; sair do aplicativo não desconecta a conta do Windows. O login requer internet; com várias contas ou sem conta Microsoft conectada ao Windows, a Microsoft pode pedir seleção ou adição de conta.</p>
         <p>O aplicativo registra eventos estruturados de diagnóstico para investigar falhas e operações. Os campos permitidos incluem canal, identificadores numéricos, categorias, contagens, duração e códigos de erro. Os logs não devem conter conteúdo de documentos, nomes de clientes, prompts, respostas ou mensagens de exceção.</p>
         <p>Essa configuração foi coberta por testes automatizados, mas retenção e rotação de logs, crash reports do sistema e todo o tráfego de rede do pacote final ainda não foram auditados. Não anunciamos ausência total de coleta ou de conexões externas antes dessa auditoria.</p>
